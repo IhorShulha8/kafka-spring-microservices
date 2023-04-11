@@ -1,0 +1,28 @@
+server:
+  port: 8082
+
+topic:
+  name1: t.order
+  name2: t.scheduled
+
+spring:
+  kafka:
+    consumer:
+      group-id: "default"
+  h2:
+    console:
+      enabled: true
+      path: /h2-console
+  datasource:
+    url: jdbc:h2:mem:testdb
+    username: sa
+    password: password
+    driver-class-name: org.h2.Driver
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    properties:
+      hibernate:
+        show_sql: true
+        format_sql: true
+        dialect: org.hibernate.dialect.H2Dialect

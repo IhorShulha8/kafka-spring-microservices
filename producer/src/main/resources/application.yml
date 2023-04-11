@@ -1,0 +1,6 @@
+server:
+  port: 8081
+
+topic:
+  name1: t.order
+  name2: t.scheduled
