@@ -24,23 +24,23 @@ services:
       KAFKA_TRANSACTION_STATE_LOG_MIN_ISR: 1
       KAFKA_TRANSACTION_STATE_LOG_REPLICATION_FACTOR: 1
 
-  producer:
-    build: ./producer
-    image: producer:latest
-    ports:
-      - "8081:8081"
-    depends_on:
-      - broker
-    environment:
-      SPRING_KAFKA_BOOTSTRAP_SERVERS: broker:9092
-
-  consumer:
-    build: ./consumer
-    image: consumer:latest
-    ports:
-      - "8082:8082"
-    depends_on:
-      - broker
-    environment:
-      SERVER_PORT: 8082
-      SPRING_KAFKA_BOOTSTRAP_SERVERS: broker:9092
+#  producer:
+#    build: ./producer
+#    image: producer:latest
+#    ports:
+#      - "8081:8081"
+#    depends_on:
+#      - broker
+#    environment:
+#      SPRING_KAFKA_BOOTSTRAP_SERVERS: broker:9092
+#
+#  consumer:
+#    build: ./consumer
+#    image: consumer:latest
+#    ports:
+#      - "8082:8082"
+#    depends_on:
+#      - broker
+#    environment:
+#      SERVER_PORT: 8082
+#      SPRING_KAFKA_BOOTSTRAP_SERVERS: broker:9092

@@ -32,7 +32,9 @@ or by curl
 > password: password
 > jdbc url: jdbc:h2:mem:test
 
-
+// not implemented
 ## Kafka Cluster Overview (UI for viewing Kafka topics and browsing consumer groups)
 > http://localhost:9000
 
+## To run everything together in docker compose
+To run everything together (producer, consumer, Kafka) using docker compose - uncomment the last two services in the docker-compose file and launch. In this case, the services are working and the producer call entry points and database checkpoint are available.
