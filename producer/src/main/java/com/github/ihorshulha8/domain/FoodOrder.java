@@ -1,9 +1,9 @@
-package com.github.ihorshulha8.producer.domain;
+package com.github.ihorshulha8.domain;
 
 import lombok.Data;
 
 @Data
-public class Order {
+public class FoodOrder {
     private String orderNumber;
     private String item;
     private Double amount;

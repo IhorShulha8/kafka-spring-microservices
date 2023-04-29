@@ -3,4 +3,3 @@ server:
 
 topic:
   name1: t.order
-  name2: t.scheduled

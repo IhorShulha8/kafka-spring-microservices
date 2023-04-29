@@ -1,7 +1,8 @@
-package com.github.ihorshulha8.producer.service.producer;
+package com.github.ihorshulha8.service.producer;
+
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.github.ihorshulha8.producer.domain.Order;
+import com.github.ihorshulha8.domain.FoodOrder;
 import lombok.SneakyThrows;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -26,8 +27,8 @@ public class Producer {
     }
 
     @SneakyThrows
-    public String sendMessage(Order order) {
-        String orderAsMessage = objectMapper.writeValueAsString(order);
+    public String sendMessage(FoodOrder foodOrder) {
+        String orderAsMessage = objectMapper.writeValueAsString(foodOrder);
         kafkaTemplate.send(topicName, orderAsMessage);
         log.info("my order produced {}", orderAsMessage);
         return "message sent";
