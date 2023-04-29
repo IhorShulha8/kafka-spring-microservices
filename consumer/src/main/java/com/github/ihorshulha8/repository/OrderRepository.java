@@ -1,6 +1,6 @@
-package com.github.ihorshulha8.consumer.repository;
+package com.github.ihorshulha8.repository;
 
-import com.github.ihorshulha8.consumer.domain.Order;
+import com.github.ihorshulha8.domain.Order;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

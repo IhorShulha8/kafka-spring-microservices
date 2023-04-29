@@ -1,9 +1,9 @@
-package com.github.ihorshulha8.consumer.service.consumer;
+package com.github.ihorshulha8.service.consumer;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.github.ihorshulha8.consumer.domain.Order;
-import com.github.ihorshulha8.consumer.domain.dto.OrderDto;
-import com.github.ihorshulha8.consumer.service.OrderService;
+import com.github.ihorshulha8.domain.Order;
+import com.github.ihorshulha8.domain.dto.OrderDto;
+import com.github.ihorshulha8.service.OrderService;
 import lombok.SneakyThrows;
 import lombok.extern.slf4j.Slf4j;
 import org.modelmapper.ModelMapper;
@@ -15,7 +15,7 @@ import org.springframework.stereotype.Component;
 @Component
 public class Consumer {
 
-    private static final String TOPIC_NAME = "${topic.name1}";
+    private static final String TOPIC_NAME = "${topic.name}";
 
     private final ObjectMapper objectMapper;
     private final ModelMapper modelMapper;

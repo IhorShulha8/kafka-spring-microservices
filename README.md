@@ -30,7 +30,7 @@ or by curl
 > http://localhost:8082/h2-console
 > username: sa
 > password: password
-> jdbc url: jdbc:h2:mem:testdb
+> jdbc url: jdbc:h2:mem:test
 
 
 ## Kafka Cluster Overview (UI for viewing Kafka topics and browsing consumer groups)

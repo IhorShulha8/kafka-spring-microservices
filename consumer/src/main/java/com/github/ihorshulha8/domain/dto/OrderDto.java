@@ -1,4 +1,4 @@
-package com.github.ihorshulha8.consumer.domain.dto;
+package com.github.ihorshulha8.domain.dto;
 
 import lombok.Data;
 import lombok.Value;

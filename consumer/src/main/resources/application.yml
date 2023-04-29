@@ -2,16 +2,22 @@ server:
   port: 8082
 
 topic:
-  name1: t.order
-  name2: t.scheduled
+  name: t.order
 
 spring:
   kafka:
+    bootstrap-servers: localhost:9092
     consumer:
-      group-id: "default"
+      group-id: default
+      auto-offset-reset: earliest
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+
   h2:
     console:
       enabled: true
+      settings:
+        web-allow-others: true
       path: /h2-console
   datasource:
     url: jdbc:h2:mem:testdb

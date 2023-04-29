@@ -14,7 +14,7 @@ import org.springframework.stereotype.Component;
 @Component
 public class Producer {
 
-    @Value("${topic.name1}")
+    @Value("${topic.name}")
     private String topicName;
 
     private final ObjectMapper objectMapper;

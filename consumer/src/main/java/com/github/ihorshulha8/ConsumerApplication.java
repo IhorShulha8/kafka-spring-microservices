@@ -1,4 +1,4 @@
-package com.github.ihorshulha8.consumer;
+package com.github.ihorshulha8;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

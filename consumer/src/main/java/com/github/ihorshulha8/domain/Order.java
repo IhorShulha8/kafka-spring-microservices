@@ -1,4 +1,4 @@
-package com.github.ihorshulha8.consumer.domain;
+package com.github.ihorshulha8.domain;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;

@@ -16,8 +16,8 @@ import java.util.Map;
 @Configuration
 public class ProducerConfig {
 
-    @Value("${topic.name1}")
-    private String topicName1;
+    @Value("${topic.name}")
+    private String topicName;
 
     private final KafkaProperties kafkaProperties;
 
@@ -40,7 +40,7 @@ public class ProducerConfig {
     @Bean
     public NewTopic topic(){
         return TopicBuilder
-                .name(topicName1)
+                .name(topicName)
                 .partitions(1)
                 .replicas(1)
                 .build();
